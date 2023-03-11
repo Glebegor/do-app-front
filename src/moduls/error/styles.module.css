@@ -1,0 +1,24 @@
+.error_inner
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+    background-color: #223e59;
+}
+.error
+{
+    width: 400px;
+}
+.request
+{
+    color:#61B3FF;
+    font-size: 246px
+}
+.error_message
+{
+    color:#61B3FF;
+    text-align: center;
+    font-size: 30px;
+}

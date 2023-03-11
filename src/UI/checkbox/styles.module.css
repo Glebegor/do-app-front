@@ -1,0 +1,48 @@
+.checkbox
+{
+    opacity: 1;
+    cursor: pointer;
+    transition: .3s;
+    position: relative;
+    width: 30px;
+    height: 30px;
+    background-color: transparent;
+    border: 5px solid #61B3FF;
+    filter: drop-shadow(0px 0px 4px #61B3FF);
+}
+.checkbox.active div
+{
+    opacity: 0;
+}
+.checkbox:hover .checkyes
+{
+    transform: scale(1.3) rotate(35deg) translateY(-5px) translateX(5px);
+}
+.checkbox:hover .checkyes2
+{
+    transform: scale(1.3) rotate(-55deg);
+}
+.checkyes
+{
+    opacity: 1;
+    transition: .3s;
+    top: -20px;
+    right: 0px;
+    background: #61B3FF;;
+    width: 10px;
+    height: 50px;
+    position: absolute;
+    transform: rotate(35deg);
+}
+.checkyes2
+{
+    opacity: 1;
+    transition: .3s;
+    bottom: 0px;
+    left: -1px;
+    background: #61B3FF;;
+    width: 10px;
+    height: 30px;
+    position: absolute;
+    transform: rotate(-55deg);
+}

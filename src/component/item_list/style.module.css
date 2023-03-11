@@ -1,0 +1,7 @@
+.itemList
+{
+    width: 100%;
+    display: flex;
+    font-size: 28px;
+    color: #61B3FF;
+}

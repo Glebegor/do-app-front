@@ -1,0 +1,10 @@
+.form
+{
+    width: 400px;
+}
+.title
+{
+    filter: drop-shadow(0px 0px 4px #61B3FF);
+    font-size: 28px;
+    color: #61B3FF;
+}

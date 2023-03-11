@@ -1,0 +1,15 @@
+.header
+{
+    position: fixed;
+    z-index: 1000;
+}
+
+
+.active1
+{
+    transform: scale(1.1) rotate(180deg)!important;
+}
+.active2
+{
+    top: -245px!important;
+}

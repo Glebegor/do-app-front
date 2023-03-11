@@ -1,0 +1,17 @@
+.navLink_inner
+{
+    margin: 10px 10px;
+    
+}
+.navLink
+{
+    transition: .3s;
+    color: #61B3FF;
+    font-size: 26px;
+    text-decoration: none;
+    font-weight: 600;
+}
+.navLink:hover
+{
+    color: #fff!important;
+}

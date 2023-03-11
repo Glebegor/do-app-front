@@ -1,0 +1,28 @@
+.headerBtn_inner
+{
+    top: -5px;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    background-color: #223e59;
+    border: 5px solid #61B3FF;
+}
+.headerBtn
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: .3s;
+    cursor: pointer;
+    background-color: transparent;
+    padding: 0px;
+    border: none;
+    outline: none;
+}
+.headerBtn:hover
+{
+    transform: scale(1.1);
+}
