@@ -2,11 +2,10 @@ import Input from "../../UI/form_input/input";
 import Button from "../../UI/form_button/button";
 import s from "./style.module.css";
 import axios from 'axios';
-import { useState ,useEffect } from "react";
- 
+import Cookies from 'universal-cookie';
 const FormSingIn = (props:{title: string, url: string, method: string}) => {
+    const cookies = new Cookies();
 
-    const [data, setData] = useState([]);
     const AuthUser = (event: React.MouseEvent<HTMLElement>) => {
         const inputs:HTMLCollectionOf<HTMLInputElement> = document.getElementsByTagName("input")
 
@@ -21,7 +20,7 @@ const FormSingIn = (props:{title: string, url: string, method: string}) => {
                 url: props.url,
                 data: bodyFormData,
             })
-            .then((response) => {localStorage.setItem(`JWT`, JSON.stringify(response.data.token));})
+            .then((response) => {cookies.set('Todo-JWT', JSON.stringify(response.data.token), {path: "/"});})
 
 
         }

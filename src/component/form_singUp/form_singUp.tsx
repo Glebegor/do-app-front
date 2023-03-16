@@ -2,6 +2,7 @@ import Input from "../../UI/form_input/input";
 import Button from "../../UI/form_button/button";
 import s from "./style.module.css";
 import axios from "axios"
+
 const FormReg = (props:{title: string, url: string, method: string}) => {
     const RegisterUser = (event: React.MouseEvent<HTMLElement>) => {
         const inputs:HTMLCollectionOf<HTMLInputElement> = document.getElementsByTagName("input")
@@ -21,8 +22,8 @@ const FormReg = (props:{title: string, url: string, method: string}) => {
 
 
         }
-
     } 
+
     return(
         <form className={s.form}>
             <div className={s.title}>{props.title}</div>
