@@ -8,10 +8,10 @@ const HomePage = () => {
     var tokenJwt: any = 'asdasd'
     tokenJwt = localStorage.getItem("JWT")
     var payload = atob(tokenJwt.split('.')[1])
-    // const decoded = jwt_decode(tokenJwt);
-    // console.log(decoded)
+    var payloadToJson = JSON.parse(payload)
+
     return(
-        <div>{payload}</div>
+        <div>{payloadToJson.Username}</div>
     )
 }
 export default HomePage
