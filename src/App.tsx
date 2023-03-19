@@ -5,6 +5,8 @@ import Auth from './pages/auth/auth';
 import ErrorPage from './pages/error/error';
 import ModuleReg from './moduls/module_reg';
 import ModuleSingIn from './moduls/module_singin';
+import ListsPage from './pages/lists/lists';
+
 import { Routes, Route } from 'react-router-dom';
 import React from "react"
 import "./App.css"
@@ -15,6 +17,8 @@ function App() {
         <Route path='/' element={<Layout />}>
           <Route path='home' element={<HomePage />} />
           <Route path='test' element={<TestPage />} />
+          <Route path='lists' element={<ListsPage />}/>
+
           <Route path='auth/' element={<Auth />}>
             <Route path='sing-in' element={<ModuleSingIn/>} />
             <Route path='sing-up' element={<ModuleReg/>} />

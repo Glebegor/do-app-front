@@ -9,6 +9,7 @@
     height: 50px;
     background-color: #223e59;
     border: 5px solid #61B3FF;
+    box-shadow: 0px 0px 20px #00000088;
 }
 .headerBtn
 {

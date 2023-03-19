@@ -4,7 +4,7 @@ import { Cookies } from "react-cookie";
 const HomePage = () => {
     const cookies = new Cookies();
 
-    var secKey = "dsfu0u423jefs8dufp32ioj#wqe12"
+    var secKey = process.env.secKey
 
     var tokenJwt: any = 'asdasd'
     tokenJwt = cookies.get("Todo-JWT")
