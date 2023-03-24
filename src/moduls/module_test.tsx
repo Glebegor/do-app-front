@@ -10,7 +10,7 @@ const ModuleTest = () => {
         <div>
             <FormReg title="Registration" url="api/auth/sing-in" method="post" />
             <ErrorWin message="Validate error. Password is not current"/>
-            <ItemList title="Task title item"/>
+            <ItemList id={1} title="Task title item"/>
             <LinkComp url="/home/" text="Homepage"/>
             <LinkComp url="/reg/" text="Reg"/>
             <LinkComp url="/lists/" text="lists"/>

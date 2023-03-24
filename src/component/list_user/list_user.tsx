@@ -1,10 +1,8 @@
 import s from "./styles.module.css"
 import axios from "axios"
-import internal from "stream";
 import Cookies from 'universal-cookie';
-import ReactDOM from 'react-dom/client';
 import {useEffect, useState} from "react"
-import { cpSync } from "fs";
+
 
 const ListUser = (): JSX.Element => {
     const cookies = new Cookies();

@@ -1,6 +1,6 @@
 import CheckBox from "../../UI/checkbox/checkbox";
 import s from "./style.module.css";
-const ItemList = (props:{title: string}) => {
+const ItemList = (props:{title: string, id: number}) => {
 
     return(
         <div className={s.itemList}>
